@@ -96,7 +96,21 @@ in
     #"Filtered Rows2"
 ```
 ## Business Questions & Insights
-![Image Alt](https://github.com/olaide025/Online-Retail-Sales-Analysis-for-Strategic-Business-Expansion/blob/main/Question%201.png)
+
+1. What are the monthly revenue patterns in 2011, and what seasonal trends can be observed?
+
+   - Revenue peaked in **December**, with significant activity also in **January**, suggesting strong seasonal demand around the **holiday period**. These trends provide a basis for 
+     forecasting and planning inventory or marketing campaigns for future peak seasons
+     
+![Revenue Trend](https://github.com/olaide025/Online-Retail-Sales-Analysis-for-Strategic-Business-Expansion/blob/main/Question%201.png)
+
+2. Which countries (excluding the UK) generate the most revenue and quantity sold?
+   
+   - The Netherlands, Ireland, and Germany emerged as top-performing countries in terms of both revenue and sales volume. These regions show strong potential for targeted marketing and 
+     operational focus.
+
+   ![Revenue Trend](https://github.com/olaide025/Online-Retail-Sales-Analysis-for-Strategic-Business-Expansion/blob/main/Question%202.png)
+
 
 
 
