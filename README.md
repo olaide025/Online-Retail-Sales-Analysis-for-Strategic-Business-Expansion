@@ -96,6 +96,7 @@ in
     #"Filtered Rows2"
 ```
 ## Business Questions & Insights
+![Image Alt](https://github.com/olaide025/Online-Retail-Sales-Analysis-for-Strategic-Business-Expansion/blob/main/Question%201.png)
 
 
 
