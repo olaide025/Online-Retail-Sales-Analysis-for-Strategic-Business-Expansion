@@ -99,18 +99,35 @@ in
 
 1. What are the monthly revenue patterns in 2011, and what seasonal trends can be observed?
 
-   - Revenue peaked in **December**, with significant activity also in **January**, suggesting strong seasonal demand around the **holiday period**. These trends provide a basis for 
-     forecasting and planning inventory or marketing campaigns for future peak seasons
+   - Revenue peaked in December 2011 at around £168,000, with a strong follow-up in January at £83,000. This shows a clear increase in customer spending during the holiday season.
      
 ![Revenue Trend](https://github.com/olaide025/Online-Retail-Sales-Analysis-for-Strategic-Business-Expansion/blob/main/Question%201.png)
 
 2. Which countries (excluding the UK) generate the most revenue and quantity sold?
    
-   - The Netherlands, Ireland, and Germany emerged as top-performing countries in terms of both revenue and sales volume. These regions show strong potential for targeted marketing and 
-     operational focus.
+   - Ireland (Eire) generated the highest revenue outside the UK, with about £2,098, followed by France at £1,258.
+   - Norway sold more items than France but earned less revenue, indicating that customers there likely purchased cheaper products or smaller orders.
+   - This shows that higher sales volume doesn’t always translate to higher revenue.
 
-   ![Revenue Trend](https://github.com/olaide025/Online-Retail-Sales-Analysis-for-Strategic-Business-Expansion/blob/main/Question%202.png)
+ ![Revenue Trend](https://github.com/olaide025/Online-Retail-Sales-Analysis-for-Strategic-Business-Expansion/blob/main/question%202.png)
 
+3. Who are the top 10 revenue-generating customers?
+   - The top 10 customers contributed a large portion of the company’s revenue.
+   - The highest spender brought in over $168,000.
+   - The lowest contributor among the top 10 generated about $1,000.
+   - This wide gap indicates that a small group of loyal customers drives most of the revenue.
+
+ ![Revenue Trend](https://github.com/olaide025/Online-Retail-Sales-Analysis-for-Strategic-Business-Expansion/blob/main/Question%203.png)
+
+4. Which countries show the highest demand for the company’s products, and where should the CEO focus expansion efforts?
+   - Ireland (EIRE) clearly stands out as the country with the highest demand, pulling in over 2,280 products.
+   - Norway comes next, with just over 1,000 products, followed by France, Germany, and the Netherlands, which round out the top five.
+   - Together, these top five countries make up the bulk of international demand, showing where the company’s products are really gaining traction.
+   
+ ![Revenue Trend](https://github.com/olaide025/Online-Retail-Sales-Analysis-for-Strategic-Business-Expansion/blob/main/Question%204.png)
+
+## Recommendation
+1. 
 
 
 
