@@ -32,39 +32,85 @@ The dataset contains transactional records from an online retail store.
 9. *Revenue*: Total value of each transaction.
 
 ## Skill Demonstrated
+
 ### Power Query
 - Data Cleaning
 - Data Transformation
+
 ### Power BI
+
 - Data Visualization
 - DAX Functions
 
-## Data Cleaning and Preparation
+## Data Cleaning/Preparation
 
-To ensure accurate and reliable analysis, several data preprocessing steps were carried out using Power Query in Power BI:
+1. Data Loading & Inspection.
 
-1. Invoice Date:
-   - Converted the InvoiceDate column to the Date data type to support accurate time-based aggregation and trend analysis.
+    - Imported the dataset and performed initial structure checks.
+  
+3. Handling Duplicates.
 
-2. Unit Price:
-   - Removed rows where UnitPrice was zero or negative, as such values indicate invalid transactions.
-   - Converted the column to Fixed Decimal Number to preserve numeric precision during calculations.
+    -  Removed duplicate entries to ensure data integrity.
 
-3. Quantity:
-   - Excluded records with Quantity less than 1, including negative values that represent product returns.
-   - Updated the data type to Whole Number for consistency and calculation accuracy.
+4. Handling Inconsistencies.
+ 
+   -  Filtered out invalid quantities and unit prices.
 
-4. Duplicates:
-   - Removed all duplicate records
+5. Formatting Columns
 
-5. Revenue Column:
-   - Created a new Revenue column by multiplying UnitPrice by Quantity, providing a measure of total sales value for each transaction.
+    - Standardized data types for date, quantity, and pricing fields.
 
-6. Country:
-   - Removed a single record labeled as "Unspecified" in the Country field to maintain geographic consistency in the analysis.
+6. Data Validation.
 
-7. Customer ID:
-   - Approximately 31% of entries in the CustomerID column were missing. These rows were filtered out to ensure the integrity of customer-level analysis, particularly for Question 3, which focuses on identifying the top 10 customers by revenue.
+   - Excluded missing or unspecified values to maintain analysis accuracy.
+
+7. Calculated Fields.
+   
+   - Added a Revenue column (UnitPrice × Quantity) for business insights.
+
+## Exploratory Data Analysis
+
+EDA involved exploring the sales data to answer key questions, such as:
+
+- What is the overall sales trend in 2011?
+- Which countries (excluding the UK) drive the most revenue and sales volume?
+- Who are our top revenue-generating customers?
+- Where is product demand highest outside the UK?
+
+## Data Analysis 
+```M language
+let
+    Source = Excel.Workbook(File.Contents("C:\Users\user\Downloads\Online Retail Data Set (1).xlsx"), null, true),
+    #"Online Retail_Sheet" = Source{[Item="Online Retail",Kind="Sheet"]}[Data],
+    #"Promoted Headers" = Table.PromoteHeaders(#"Online Retail_Sheet", [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"InvoiceDate", type date}}),
+    #"Filtered Rows" = Table.SelectRows(#"Changed Type", each ([UnitPrice] <> 0)),
+    #"Changed Type1" = Table.TransformColumnTypes(#"Filtered Rows",{{"UnitPrice", Currency.Type}}),
+    #"Filtered Rows1" = Table.SelectRows(#"Changed Type1", each ([Quantity] <> -24 and [Quantity] <> -12 and [Quantity] <> -6 and [Quantity] <> -1)),
+    #"Changed Type2" = Table.TransformColumnTypes(#"Filtered Rows1",{{"Quantity", Int64.Type}}),
+    #"Removed Duplicates" = Table.Distinct(#"Changed Type2", {"StockCode"}),
+    #"Added Custom" = Table.AddColumn(#"Removed Duplicates", "Revenue", each [UnitPrice] * [Quantity]),
+    #"Changed Type3" = Table.TransformColumnTypes(#"Added Custom",{{"Revenue", Currency.Type}}),
+    #"Filtered Rows2" = Table.SelectRows(#"Changed Type3", each ([Quantity] <> -720 and [Quantity] <> -50 and [Quantity] <> -8 and [Quantity] <> -7 and [Quantity] <> -4 and [Quantity] <> -3 and [Quantity] <> -2))
+in
+    #"Filtered Rows2"
+```
+## Business Questions & Insights
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
