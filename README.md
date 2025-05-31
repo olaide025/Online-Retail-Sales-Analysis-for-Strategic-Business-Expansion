@@ -122,12 +122,29 @@ in
 4. Which countries show the highest demand for the company’s products, and where should the CEO focus expansion efforts?
    - Ireland (EIRE) clearly stands out as the country with the highest demand, pulling in over 2,280 products.
    - Norway comes next, with just over 1,000 products, followed by France, Germany, and the Netherlands, which round out the top five.
-   - Together, these top five countries make up the bulk of international demand, showing where the company’s products are really gaining traction.
+   - Together, these top five countries make up the bulk of international demand, showing where the company’s products are gaining traction.
    
  ![Revenue Trend](https://github.com/olaide025/Online-Retail-Sales-Analysis-for-Strategic-Business-Expansion/blob/main/Question%204.png)
 
 ## Recommendation
-1. 
+
+1. Focus marketing and inventory on Q4 to capitalize on holiday sales.
+2. Offer premium products in Norway to boost revenue per sale.
+3. Introduce a loyalty program to retain high-value customers.
+4. Start expansion with Ireland and Norway—demand is strong.
+
+## About This Project
+This project demonstrates my skills in Power BI, Power Query, and data analysis. It highlights my ability to clean and transform messy retail data, uncover key business trends, and deliver insights on customer behavior, regional performance, and revenue patterns.
+
+By building an interactive dashboard, I showcased my data storytelling ability, translating raw numbers into clear, actionable recommendations for business growth and market expansion.
+
+## Power BI File
+
+The complete dashboard file is available for download:
+
+ ![Online Retail Sales Analysis](https://drive.google.com/file/d/1lJ5cMz1ZTWuGzci4G76vXrzYtCwg5Ya1/view?usp=drive_link)
+
+
 
 
 
