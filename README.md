@@ -141,9 +141,7 @@ By building an interactive dashboard, I showcased my data storytelling ability, 
 ## Power BI File
 
 The complete dashboard file is available for download:
-
- ![Online Retail Sales Analysis](https://github.com/olaide025/Online-Retail-Sales-Analysis-for-Strategic-Business-Expansion/blob/main/Retail_Performance_Report.pbix)
-
+[Online Retail Sales Analysis](https://github.com/olaide025/Online-Retail-Sales-Analysis-for-Strategic-Business-Expansion/blob/main/Retail_Performance_Report.pbix)
 
 
 
