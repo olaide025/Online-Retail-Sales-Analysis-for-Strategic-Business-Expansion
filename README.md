@@ -142,7 +142,7 @@ By building an interactive dashboard, I showcased my data storytelling ability, 
 
 The complete dashboard file is available for download:
 
- ![Online Retail Sales Analysis](https://drive.google.com/file/d/1lJ5cMz1ZTWuGzci4G76vXrzYtCwg5Ya1/view?usp=drive_link)
+ ![Online Retail Sales Analysis](https://github.com/olaide025/Online-Retail-Sales-Analysis-for-Strategic-Business-Expansion/blob/main/Retail_Performance_Report.pbix)
 
 
 
